@@ -1,8 +1,9 @@
 from colorama import Fore as c
 import os
+from time import sleep, time
+
 
 def pull(base):
-
     try:
 
         if not os.path.exists(base):
@@ -17,4 +18,7 @@ def pull(base):
 
 dir = "{Your directory path, make sure to replace \ with \\}"
 
-pull(dir)
+while True:
+    pull(dir)
+    sleep(60 - time() % 60)
+    print(c.LIGHTMAGENTA_EX + "Pulling..." + c.RESET)
