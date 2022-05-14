@@ -18,7 +18,7 @@ def pull(base):
     except Exception as e:
         #if there is an error, it will display it
         print(c.RED + "Error: " + c.LIGHTCYAN_EX + str(e) + c.RESET)
-        print(c.RED + "Error: " + c.LIGHTCYAN_EX + "SEND THIS TO uiopler#6942 ON DISCORD" + c.RESET)
+        print(c.RED + "Error: " + c.LIGHTCYAN_EX + "SEND THIS TO uiopler#6948 ON DISCORD" + c.RESET)
 
 while True:
 
