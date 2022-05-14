@@ -1,2 +1,2 @@
 # autoPull
-a (bad) way to pull your repo every x minutes with python
+a (bad) way to pull your repo every x seconds with python
