@@ -1,9 +1,12 @@
 from colorama import Fore as c
-import os
+import os, threading
 from time import sleep, time
 
+seconds =(3) #change to what you want
+dir = "{Your directory path, make sure to replace \ with \\}"
 
 def pull(base):
+    
     try:
 
         if not os.path.exists(base):
@@ -16,9 +19,6 @@ def pull(base):
         print(c.RED + "Error: " + c.LIGHTCYAN_EX + str(e) + c.RESET)
         print(c.RED + "Error: " + c.LIGHTCYAN_EX + "SEND THIS LOG TO UIOPLER" + c.RESET)
 
-dir = "{Your directory path, make sure to replace \ with \\}"
-
 while True:
+    sleep(seconds)
     pull(dir)
-    sleep(60 - time() % 60)
-    print(c.LIGHTMAGENTA_EX + "Pulling..." + c.RESET)
