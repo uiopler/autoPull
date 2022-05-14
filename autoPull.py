@@ -24,10 +24,10 @@ while True:
 
     sleep(seconds)
     #Replace "Your Directory" with the specified one, please make sure to replace "/" with "//", example C:/Users/... --> C://Users//...
-    #You can add more directories if you want, just add a comma and add it (Make sure to put the dir in Elipsis (these are called Elipsis -> "" ))
+    #You can add more directories if you want, just add a comma and add it (Make sure to put the dir in Elipsis / Quotation mark (these are called Elipsis / Quotation mark -> "" ))
     DIRECTORIES = ["Your Directory"]
     #loops through the directories 
-    
+
     for i in DIRECTORIES:
         pull(i)
     
