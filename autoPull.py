@@ -3,7 +3,6 @@ import os, threading
 from time import sleep, time
 
 seconds =(3) #change to what you want
-dir = "{Your directory path, make sure to replace \ with \\}"
 
 def pull(base):
     
@@ -21,4 +20,7 @@ def pull(base):
 
 while True:
     sleep(seconds)
-    pull(dir)
+
+    DIRECTORIES = ["C:\\Users\\Administrator\\Documents\\GitHub\\OPW", "C:\\Users\\Administrator\\Documents\\GitHub\\OPW\\FXServer\\resources\\[cars]\\OPWVeh", "C:\\Users\\Administrator\\Documents\\GitHub\\OPW\\FXServer\\resources\\[scripts]\\opwassets\\opwtrial\\OPWTrial"]
+    for i in DIRECTORIES:
+        pull(i)
